@@ -48,7 +48,7 @@ function displaybook(book, bookshelf, index){
 }
 
 function removebookfromdatabase(id){
-  fetch('http://localhost:8000/php/includes/deletebook.php', {
+  fetch('https://github.com/mrhxszo/Library/tree/main/php/includes/deletebook.php', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ function removebookfromdatabase(id){
 }
 
 function uploadlibrary() {
-    fetch('http://localhost:8000/php/main.php', {
+    fetch('https://github.com/mrhxszo/Library/tree/main/php/main.php', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ function uploadlibrary() {
     logininfo = {"username" : document.getElementById("username").value,
     "password" : document.getElementById("password").value};
 
-    fetch('http://localhost:8000/php/Users/login.inc.php', {
+    fetch('https://github.com/mrhxszo/Library/tree/main/php/Users/login.inc.php', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ function uploadlibrary() {
     "password" : password.value,
     "repassword": repassword.value};
 
-    fetch('http://localhost:8000/php/Users/signup.inc.php', {
+    fetch('https://github.com/mrhxszo/Library/tree/main/php/Users/signup.inc.php', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ function uploadlibrary() {
 
 
   function retrievebook(userid, library) {
-    fetch('http://localhost:8000/php/includes/retrievebook.php', {
+    fetch('https://github.com/mrhxszo/Library/tree/main/php/includes/retrievebook.php', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
