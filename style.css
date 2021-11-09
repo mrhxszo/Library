@@ -1,0 +1,207 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    font-family: monospace;
+    background-color: darkslateblue;
+    height: 4rem;
+    width: 100%;
+    margin: 5px 5px 5px 5px;
+    align-items: center;
+}
+body{
+    background-color: rgb(153, 153, 192);
+}
+.main-container{
+    display: grid;
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: indigo;
+}
+.bookshelf{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+    justify-items: center;
+}
+@media only screen and (max-width: 960px){
+    .bookshelf{
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+@media only screen and (max-width: 480px){
+    .bookshelf{
+        grid-template-columns: 1fr ; 
+    }
+}
+.book{
+    display: flex;
+    font-family: monospace;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(151, 43, 16);
+    padding: 10px 10px 10px 10px;
+    width: 250px;
+    height:300px;
+    top:50%;
+    left: 50%;  
+    background: #7531f3;
+    border-radius: 20px 16px 12px 32px;
+    background-image: linear-gradient(to right,#311fd1 48px, #3707ba 50px, transparent 50px);  
+
+    }
+
+.add{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(7, 10, 160);
+    margin: 10px 10px 10px 10px;
+    border-radius: 50%;
+}
+.add:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* modalwindow */
+
+.modal-window{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0,0, 0.5);
+}
+.modal-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(114, 6, 190);
+    margin: 10% auto;
+    padding: 20px;
+    height: 60%;
+    width: 60%;
+    box-shadow: 0 5px 8px black;
+}
+.modal-title{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: monospace;
+    font-size: 30px;
+}
+.closebtn{
+    background-color: transparent;
+    font-size: 30px;
+    border-style: none;
+}
+.closebtn:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-text{
+    margin: 10px;
+    padding: 20px;
+    height: 40%;
+    width: 70%;
+    max-height: 2rem;
+    box-shadow: 0 5px 8px black;
+}
+.read-label{
+    margin: 10px 5px 5px 5px;
+    padding: 5px 5px 5px 5px ;
+}
+.submit-button {
+    margin: 10px 5px 5px 5px;
+    padding: 5px 5px 5px 5px ;
+    transition-duration: 0.4s;
+    box-shadow: 0 5px 7px black;
+    background-color: #09035c;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #0f0692;
+  }
+
+  .remove{
+    padding: 5px 5px 5px 5px ;
+    transition-duration: 0.4s;
+    box-shadow: 0 5px 7px black;
+    background-color: #09035c;
+    color: white;
+  }
+
+  .remove:hover {
+    background-color: #0f0692;
+  }
+
+  .login-form{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0,0, 0.5);
+}
+.login-box{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(114, 6, 190);
+    margin: 10% auto;
+    padding: 20px;
+    height: 45%;
+    width: 30%;
+    box-shadow: 0 5px 8px black;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 480px){
+    .login-box{
+        height: 50%;
+        width: 70%;
+    }
+}
+.login-items{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-text{
+    margin: 10px;
+    padding: 20px;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0 5px 8px black;   
+}
+
+/* signup */
+.signup-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(114, 6, 190);
+    margin: 5% 5% 5% 15%;
+    padding: 20px;
+    height: 70%;
+    width: 60%;
+    box-shadow: 0 5px 8px black;
+    align-items: center;
+}
+@media  screen and (min-width:850px) {
+    .signup-box{
+        height: 70%;
+    }
+}
